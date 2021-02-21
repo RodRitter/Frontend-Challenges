@@ -1,0 +1,22 @@
+@import '../../styles/globals/variables';
+
+.switch {
+    background: $clr-toggle-bg;
+    border-radius: 100px;
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+    transition: all linear 0.1s;
+
+    .toggle {
+        position: absolute;
+        background: $clr-comp-bg;
+        border-radius: 100px;
+        pointer-events: none;
+        transition: all linear 0.1s;
+    }
+
+    &:hover {
+        background: $clr-slider;
+    }
+}

@@ -1,0 +1,38 @@
+@import '../../styles/globals/variables';
+
+.range-slider {
+    height: 10px;
+    background: $clr-slider-empty;
+    border-radius: 20px;
+    position: relative;
+
+    .range-slider-handle {
+        transition: opacity linear 0.1s;
+        width: 40px;
+        height: 40px;
+        top: -15px;
+        background: url('../../resources/icon-slider.svg') center center no-repeat $clr-slider-bg;
+        background-size: 60% auto;
+        position: absolute;
+        border-radius: 100px;
+        cursor: pointer;
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(16, 213, 194, 0.7);
+        -moz-box-shadow: 0px 0px 15px 0px rgba(16, 213, 194, 0.7);
+        box-shadow: 0px 0px 15px 0px rgba(16, 213, 194, 0.7);
+        z-index: 300;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    .range-slider-progress {
+        background: $clr-slider;
+        border-radius: 20px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 200;
+    }
+}
