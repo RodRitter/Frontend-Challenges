@@ -8,7 +8,7 @@ import InteractivePricing from './InteractivePricing';
 
 function App() {
   return (
-    <Router>
+    <Router basename='/projects/ui'>
       <Switch>
         <Route path="/interactive-pricing">
           <InteractivePricing />
