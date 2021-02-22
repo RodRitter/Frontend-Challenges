@@ -1,0 +1,9 @@
+@import '../../styles/globals/variables';
+
+.leaflet-map {
+    height: 100%;
+
+    .leaflet-container {
+        height: 100%;
+    }
+}

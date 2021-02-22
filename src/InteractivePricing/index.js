@@ -28,6 +28,10 @@ const PRICES = [
 
 export default function InteractivePricing() {
 
+    useEffect(() => {     
+        document.title = 'Interactive Pricing'
+    }, [])
+
     const [yearlyBilling, setYearlyBilling] = useState(false);
     const [pricing, setPricing] = useState(PRICES[0]);
 

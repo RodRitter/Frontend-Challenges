@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 
 import InteractivePricing from './InteractivePricing';
+import IPTracker from './IPTracker';
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
       <Switch>
         <Route path="/interactive-pricing">
           <InteractivePricing />
+        </Route>
+        <Route path="/ip-tracker">
+          <IPTracker />
         </Route>
       </Switch>
     </Router>

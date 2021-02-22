@@ -1,0 +1,35 @@
+@import '../../styles/globals/variables';
+
+.form-input {
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 380px;
+    height: 40px;
+    margin: 0 auto;
+
+    input {
+        flex: 1;
+        padding: 0 20px;
+        font-size: 16px;
+        font-weight: 500;
+        color: $clr-gray-dark;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    button {
+        transition: background-color linear 0.1s;
+        flex: 0 0 40px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background: url('../../resources/icon-arrow.svg') center center no-repeat #000;
+        
+        &:hover {
+            background-color: $clr-gray-dark;
+        }
+    }
+}
