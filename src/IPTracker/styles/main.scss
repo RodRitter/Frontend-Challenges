@@ -13,23 +13,24 @@
     .top-section {
         background: url('../resources/pattern-bg.png') center top;
         background-size: cover;
-        padding: 10px 0 80px 0;
+        padding: 20px 0 100px 0;
         position: relative;
 
         h1 {
             text-align: center;
             color: #fff;
             font-weight: 500;
+            font-size: 30px;
         }
 
         .ip-info {
             display: flex;
             background: #fff;
-            width: 750px;
+            width: 850px;
             border-radius: 10px;
             color: $clr-gray-dark;
             position: absolute;
-            top: 150px;
+            top: 195px;
             left: 50%;
             transform: translateX(-50%);
             z-index: 1000;
@@ -75,4 +76,42 @@
         overflow: hidden;
         height: 100%;
     }
+}
+
+@media only screen and (max-width: 880px) { 
+    .ip-tracker {
+        .top-section {
+            .ip-info {
+                width: 650px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 680px) { 
+    .ip-tracker {
+        .top-section {
+            padding-top: 10px;
+            h1 {
+                margin: 10px 0 20px 0;
+                font-size: 22px;
+            }
+            .ip-info {
+                flex-direction: column;
+                width: 90%;
+                top: 135px;
+
+                div {
+                    text-align: center;
+                    margin: 20px 0 0 0;
+
+                    &:last-child {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+
 }
