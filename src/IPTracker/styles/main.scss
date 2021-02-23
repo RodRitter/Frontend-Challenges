@@ -84,6 +84,12 @@
         .top-section {
             .ip-info {
                 width: 650px;
+
+                div {
+                    span {
+                        font-size: 16px;
+                    }
+                }
             }
         }
     }
