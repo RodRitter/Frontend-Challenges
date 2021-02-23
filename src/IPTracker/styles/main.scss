@@ -26,7 +26,7 @@
         .ip-info {
             display: flex;
             background: #fff;
-            width: 850px;
+            width: 900px;
             border-radius: 10px;
             color: $clr-gray-dark;
             position: absolute;
@@ -41,8 +41,8 @@
 
             >div {
                 flex: 1;
-                padding: 0 20px 0 20px;
-                margin: 20px 0;
+                padding: 0 20px;
+                margin: 25px 0;
                 border-left: 1px solid $clr-gray-light;
 
                 &:first-child {
@@ -54,12 +54,12 @@
                     font-weight: 500;
                     color: $clr-gray;
                     text-transform: uppercase;
-                    margin: 0 0 5px 0;
+                    margin: 0 0 10px 0;
                     letter-spacing: 1px;
                 }
 
                 >span {
-                    font-weight: 700;
+                    font-weight: 500;
                     font-size: 20px;
                 }
             }
