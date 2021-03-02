@@ -1,0 +1,80 @@
+@import '../../styles/globals/variables';
+
+.checkbox {
+    height: fit-content;
+    
+    /* Customize the label (the container) */
+    .cb-container {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        font-weight: 700;
+        height: 24px;
+        line-height: 24px;
+
+        /* Hide the browser's default checkbox */
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+
+        /* When the checkbox is checked, add a blue background */
+        input:checked ~ .cb-checkmark {
+            background-color: $clr-violet;
+        }
+
+        /* Show the checkmark when checked */
+        input:checked ~ .cb-checkmark:after {
+            display: block;
+        }
+
+        /* On mouse-over, add a grey background color */
+        &:hover input ~ .cb-checkmark {
+            background-color: $clr-violet-light;
+        }
+
+        &:hover input:checked ~ .cb-checkmark {
+            background-color: $clr-violet;
+        }
+    }
+
+    /* Create a custom checkbox */
+    .cb-checkmark {
+        transition: background-color linear 0.1s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 24px;
+        width: 24px;
+        border-radius: 3px;
+        background-color: #eee;
+
+        /* Create the checkmark/indicator (hidden when not checked) */
+        &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 9px;
+            top: 5px;
+            width: 4px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    }
+
+    
+
+   
+}

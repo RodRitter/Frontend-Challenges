@@ -1,0 +1,56 @@
+@import '../../styles/globals/variables';
+
+.job-card {
+    transition: background-color linear 0.1s;
+    background: $clr-white;
+    padding: 40px 32px 30px 32px;
+    border-radius: 5px;
+    position: relative;
+
+    .job-company-logo {
+        position: absolute;
+        border-radius: 15px;
+        width: 50px;
+        height: 50px;
+        top: -25px;
+        overflow: hidden;
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: $clr-white;
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+    }
+
+    .job-meta-data {
+        color: $clr-gray-dark;
+        font-weight: 500;
+    }
+
+    .job-title {
+        font-size: 20px;
+        margin: 10px 0 0 0;
+        cursor: pointer;
+        transition: color linear 0.1s;
+
+        &:hover {
+            color: $clr-gray-dark;
+        }
+        
+    }
+
+    .job-company {
+        font-size: 16px;
+        color: $clr-gray-dark;
+        margin: 5px 0;
+        font-weight: 500;
+    }
+
+    .job-location {
+        font-size: 14px;
+        margin: 30px 0 0 0;
+        font-weight: bold;
+        color: $clr-violet;
+    }
+}

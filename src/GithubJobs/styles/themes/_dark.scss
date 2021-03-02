@@ -1,0 +1,88 @@
+@import '../globals/variables';
+
+.github-jobs {
+    
+    &.theme-dark {
+        background: $clr-midnight;
+
+        .site-header {
+            .job-search {
+                background-color: $clr-blue-dark;
+
+                .search-input {
+                    >* {
+                        border-left: 2px solid $clr-gray-darkest;
+                        caret-color: $clr-violet;
+                        color: $clr-white;
+                        
+                        &:first-child {
+                            border: none;
+                        }
+                    }
+                }
+
+                
+            }
+        }
+
+        .main-content {
+            .jobs {
+                .skeleton-card, .skeleton-card-logo {
+                    background-color: $clr-gray-dark;
+                }
+            }
+
+            h1, h2, h3 {
+                color: $clr-white;
+            }
+
+            p {
+                color: $clr-gray;
+
+                a {
+                    &:hover {
+                        color: $clr-white;
+                    }
+                }
+            }
+
+            li {
+                color: $clr-gray;
+            }
+
+            .company-details {
+                background-color: $clr-blue-dark;
+            }
+
+            .job-info {
+                background-color: $clr-blue-dark;
+                color: $clr-white;
+            }
+
+            .job-apply-info {
+                p, li, a {
+                    color: $clr-white;
+                }
+            }
+        }
+
+        .job-footer {
+            background-color: $clr-blue-dark;
+            color: $clr-white;
+
+            .job-title {
+                color: $clr-white;
+            }
+        }
+    
+        .btn, .btn.alt {
+            color: $clr-white;
+            background: rgba(255, 255, 255, 0.1);
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.35);
+            }
+        }
+
+    }
+}

@@ -1,0 +1,15 @@
+@import '../../styles/globals/variables';
+
+.theme-dark {
+    .job-card {
+        background: $clr-blue-dark;
+
+        .job-title {
+            color: $clr-white;
+
+            &:hover {
+                color: $clr-gray-dark;
+            }
+        }
+    }
+}

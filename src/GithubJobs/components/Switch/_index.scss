@@ -1,0 +1,26 @@
+@import '../../styles/globals/variables';
+
+.switch {
+    background: $clr-white;
+    border-radius: 100px;
+    margin: 0;
+    position: relative;
+    cursor: pointer;
+    transition: all linear 0.1s;
+
+    .toggle {
+        position: absolute;
+        background: $clr-violet;
+        border-radius: 100px;
+        pointer-events: none;
+        transition: all linear 0.1s;
+    }
+
+    &:hover {
+        background: $clr-white;
+
+        .toggle {
+            background: $clr-violet-light;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@import 'globals/variables';
+@import 'globals/fonts';
+
+// Themes
+@import 'themes/light';
+@import 'themes/dark';
+
+// Components
+@import '../components/Switch/';
+@import '../components/Checkbox/';
+@import '../components/JobCard/';
+
+htmp, body, #root {
+    height: 100%;
+}
